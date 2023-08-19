@@ -1,0 +1,42 @@
+.swiper-pagination {
+  &.swiper-pagination-bullets {
+    width: fit-content;
+    right: calc(50% - 609px);
+    left: auto;
+    bottom: 10.3%;
+
+    & .swiper-pagination-bullet {
+      border: 1px solid $color-default-white;
+      width: 10px;
+      height: 10px;
+      background: transparent;
+      opacity: 1;
+      margin: 8px;
+
+      @include vp-767 {
+        width: 8px;
+        height: 8px;
+        margin: 6px;
+      }
+    }
+
+    & .swiper-pagination-bullet-active {
+      border: 1px solid $color-default-white;
+      background: $color-default-white;
+    }
+
+    @include vp-1279 {
+      right: 32px;
+    }
+
+    @include vp-1199 {
+      width: 100%;
+      left: 0;
+      bottom: 75px;
+    }
+
+    @include vp-767 {
+      bottom: 27px;
+    }
+  }
+}

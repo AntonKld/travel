@@ -1,0 +1,178 @@
+.feedback {
+  position: relative;
+}
+
+.feedback__container {
+  width: 100%;
+  max-width: 1210px;
+  padding: 312px 5px 307px;
+  margin: 0 auto;
+  text-align: center;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    padding: 0 45px;
+    padding-top: 195px;
+    padding-bottom: 184px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+    padding-top: 182px;
+    padding-bottom: 175px;
+  }
+}
+
+.feedback picture {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  inset: 0;
+  display: flex;
+}
+
+.feedback img {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+  background-color: $color-resolution-blue;
+}
+
+.feedback__container h2 {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+  margin: 0;
+  margin-bottom: 17px;
+  margin-right: 17px;
+
+  @include vp-1199 {
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 25px;
+    margin-right: 0;
+    margin-bottom: 19px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 22px;
+    margin-bottom: 13px;
+  }
+}
+
+.feedback__container p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  margin-right: 18px;
+  margin-bottom: 41px;
+
+  @include vp-1199 {
+    width: 45%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 auto 29px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 26px;
+  }
+}
+
+.feedback__form form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  @include vp-1199 {
+    align-items: center;
+    flex-direction: column;
+    margin: 0 206px;
+    gap: 7px;
+  }
+
+  @include vp-767 {
+    margin: 0 auto;
+  }
+}
+
+.feedback__button {
+  height: max-content;
+  width: 238px;
+  display: inline-block;
+  border: none;
+  color: $color-default-white;
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 500;
+  text-align: center;
+  background-color: $color-navy-blue;
+  padding: 25px 10px 23px;
+  cursor: pointer;
+
+  @include vp-1199 {
+    width: 100%;
+    margin-top: 8px;
+    padding: 22px 10px 19px;
+  }
+
+  @include vp-767 {
+    padding: 19px 10px 17px;
+    margin-top: 1px;
+  }
+
+  @include hover-focus {
+    padding: 24px 10px 22px;
+    color: $color-resolution-blue;
+    background-color: $color-default-white;
+    border: 1px solid $color-resolution-blue;
+
+    @include vp-1199 {
+      margin-top: 8px;
+      padding: 21px 10px 19px;
+    }
+
+    @include vp-767 {
+      padding: 18px 10px 16px;
+    }
+  }
+
+  @include active {
+    color: $color-default-white;
+    background-color: $color-resolution-blue;
+    border-color: $color-resolution-blue;
+  }
+
+  &:focus-visible {
+    padding: 24px 10px 19px;
+    color: $color-resolution-blue;
+    background-color: $color-default-white;
+    border: 1px solid $color-resolution-blue;
+    outline: none;
+
+    @include vp-1199 {
+      margin-top: 8px;
+      padding: 21px 10px 21px;
+    }
+
+    @include vp-767 {
+      padding: 18px 10px 16px;
+    }
+  }
+
+  @include disabled {
+    pointer-events: none;
+    cursor: default;
+    background-color: rgba(2, 102, 193, 0.1);
+  }
+}

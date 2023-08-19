@@ -1,6 +1,15 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import {burgerMenuInit} from './modules/burger.js';
+import {heroSwiper, initToursSlider} from './modules/slider.js';
+import {initPlayVideo} from './modules/video';
+import {addAudioHandlers} from './modules/audio';
+import {initTrainingSlider} from './modules/training';
+import {initReviewsSlider} from './modules/reviews';
+import {initAdvantagesSlider} from './modules/advantages';
+import {initGallerySlider} from './modules/gallery';
+import {initContactsMap} from './modules/map';
 
 // ---------------------------------
 
@@ -10,7 +19,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-
   // Modules
   // ---------------------------------
 
@@ -18,9 +26,19 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
+    addAudioHandlers();
+    initToursSlider();
+    initTrainingSlider();
+    initReviewsSlider();
     const form = new Form();
     window.form = form;
     form.init();
+    heroSwiper();
+    burgerMenuInit();
+    initPlayVideo();
+    initAdvantagesSlider();
+    initGallerySlider();
+    initContactsMap();
   });
 });
 

@@ -1,0 +1,269 @@
+.footer {
+  padding-top: 31px;
+  padding-bottom: 30px;
+  border-top: 1px solid rgba(45, 56, 63, 0.2);
+
+  @include vp-1199 {
+    padding-top: 43px;
+    padding-bottom: 39px;
+  }
+
+  @include vp-767 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.footer .container {
+  padding: 0 10px;
+  max-width: 1220px;
+
+  @include vp-1199 {
+    padding: 0 45px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 9px;
+
+  @include vp-1199 {
+    margin-bottom: 30px;
+  }
+
+  @include vp-767 {
+    align-items: stretch;
+    flex-direction: column;
+    text-align: start;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+}
+
+.footer__logo svg {
+  width: 205px;
+  height: 60px;
+
+  @include vp-1199 {
+    width: 118px;
+    height: 35px;
+  }
+
+  @include vp-767 {
+    width: 112px;
+    height: 34px;
+  }
+}
+
+.footer__logo {
+  @include vp-767 {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5px;
+  }
+}
+
+.footer__list {
+  position: relative;
+  max-width: 620px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 23px;
+  left: -32px;
+  margin: 0;
+  margin-top: -5px;
+  padding: 0;
+
+  @include vp-1199 {
+    gap: 11px;
+    left: 0;
+    margin-top: -10px;
+  }
+
+  @include vp-767 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px 20px;
+    margin: 0;
+  }
+}
+
+.footer__link {
+  position: relative;
+  color: $color-elephant;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  padding: 3px 5px;
+
+  @include vp-1199 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+
+  &:hover {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $color-elephant;
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-elephant;
+  }
+}
+
+.footer__link--disabled {
+  color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  cursor: none;
+}
+
+.footer__contacts {
+  color: $color-elephant;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  margin-top: -5px;
+
+  @include vp-1199 {
+    display: none;
+  }
+
+  &:hover {
+    color: $color-resolution-blue;
+  }
+
+  &:focus {
+    color: $color-resolution-blue;
+  }
+
+  &:active {
+    color: $color-navy-blue;
+  }
+}
+
+.footer__contacts--disabled {
+  pointer-events: none;
+  cursor: none;
+  color: rgba(2, 102, 193, 0.1);
+}
+
+.footer__social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+  gap: 15px;
+  width: 121px;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  @include vp-767 {
+    margin: 0;
+    margin-bottom: 20px;
+    margin-left: 5px;
+  }
+}
+
+.footer__social-link {
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  border: 1px solid rgba(45, 56, 63, 0.3);
+
+  &:hover {
+    border: 1px solid $color-elephant;
+  }
+
+  &:focus {
+    border: 1px solid $color-elephant;
+    outline: none;
+  }
+
+  &:focus-visible {
+    border: 1px solid $color-elephant;
+    outline: none;
+  }
+}
+
+.footer__social-link:active {
+  background-color: $color-navy-blue;
+  color: $color-default-white;
+  border: none;
+}
+
+.footer__social-link--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: none;
+}
+
+.footer__text {
+  text-align: center;
+  color: $color-elephant;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 100%;
+  margin: 0;
+
+  @include vp-767 {
+    text-align: start;
+    margin-left: 5px;
+  }
+}
+
+.footer__item--tour {
+  @include vp-767 {
+    order: -5;
+  }
+}
+
+.footer__item--training {
+  @include vp-767 {
+    order: -3;
+  }
+}
+
+.footer__item--about {
+  @include vp-767 {
+    order: -1;
+  }
+}
+
+.footer__item--reviews {
+  @include vp-767 {
+    order: -4;
+  }
+}
+
+.footer__item--photo {
+  @include vp-767 {
+    order: -2;
+  }
+}
+
+.footer__item--contact {
+  @include vp-767 {
+    order: 0;
+  }
+}

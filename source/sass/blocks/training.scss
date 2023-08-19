@@ -1,0 +1,490 @@
+.training h2 {
+  position: relative;
+  color: $color-elephant;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+  margin: 0;
+  margin-bottom: 33px;
+
+  @include vp-1199 {
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 25px;
+    margin-bottom: 22px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+}
+
+.training h2::before {
+  content: attr(data-text);
+  position: absolute;
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 55px;
+  opacity: 0.03;
+  transform: translate(0, -32%);
+
+  @include vp-1199 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 40px;
+  }
+
+  @include vp-767 {
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 26px;
+  }
+}
+
+.training p {
+  width: 68.3%;
+  color: $color-elephant;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  margin: 0;
+  margin-bottom: 43px;
+
+  @include vp-1199 {
+    width: 83.3%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    margin-bottom: 53px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 32px;
+  }
+}
+
+.training__instructors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 29px;
+
+  @include vp-1199 {
+    margin-bottom: 18px;
+  }
+}
+
+.training__instructors h3 {
+  color: $color-elephant;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  margin: 0;
+
+  @include vp-1199 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+  }
+}
+
+.training__controls {
+  margin-top: 5px;
+  margin-right: 2px;
+
+  @include vp-1199 {
+    margin-right: 0;
+    margin-top: 6px;
+  }
+}
+
+.training__slide {
+  border: 1px solid $color-default-white;
+  background: $color-default-white;
+  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+  list-style: none;
+  padding: 19px;
+  height: auto;
+
+  @include vp-1199 {
+    padding: 14px;
+    padding-top: 13px;
+  }
+
+  @include vp-767 {
+    padding: 19px;
+  }
+}
+
+.training__slide img {
+  width: 100%;
+  background-color: $color-resolution-blue;
+  margin-bottom: 16px;
+}
+
+.training__slide-iner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+
+  @include vp-1199 {
+    margin-bottom: 12px;
+  }
+}
+
+.training__slide-iner h4 {
+  max-width: 50%;
+  color: $color-elephant;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  margin: 0;
+}
+
+.training__slide p {
+  width: 100%;
+  color: $color-elephant;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0;
+
+  @include vp-1199 {
+    line-height: 18px;
+  }
+}
+
+.training__container {
+  max-width: 1210px;
+  padding: 0 5px;
+  margin: 0 auto;
+
+  @include vp-1199 {
+    padding: 0 45px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
+}
+
+.training__slides {
+  margin: 0;
+  padding: 0;
+}
+
+.training__slider {
+  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+  margin-bottom: 49px;
+
+  @include vp-1199 {
+    margin-bottom: 44px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 39px;
+  }
+}
+
+.training__slide-link {
+  display: flex;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+
+  @include vp-767 {
+    margin-right: 12px;
+  }
+
+  &:hover {
+    border: 1px solid $color-elephant;
+  }
+
+  &:focus {
+    border: 1px solid $color-elephant;
+    outline: none;
+  }
+
+  &:focus-visible {
+    border: 1px solid $color-elephant;
+    outline: none;
+  }
+}
+
+.training__slide-link:active {
+  background-color: $color-navy-blue;
+  color: $color-default-white;
+  border: none;
+}
+
+.training__slide-link--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: none;
+}
+
+.training__title h3 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  margin: 0;
+  margin-bottom: 41px;
+
+  @include vp-1199 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-left: 4px;
+    margin-bottom: 28px;
+  }
+}
+
+.training__processes {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(4, 1fr);
+  align-self: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include vp-1199 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 90px 28px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding-left: 37px;
+    padding-right: 26px;
+  }
+}
+
+.training__processes::before {
+  @include vp-767 {
+    position: absolute;
+    content: "";
+    background-color: rgba(2, 102, 193, 0.2);
+    top: 10%;
+    bottom: 10%;
+    left: 10px;
+    width: 1px;
+  }
+}
+
+.training {
+  position: relative;
+  padding-bottom: 63px;
+
+  @include vp-1199 {
+    padding-bottom: 90px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 17px;
+  }
+}
+
+.training::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: rgba(2, 102, 193, 0.2);
+  width: 100%;
+  bottom: 30px;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.training__process-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  @include vp-767 {
+    gap: 12px;
+  }
+}
+
+.training__process-item::before {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  background-color: $color-navy-blue;
+  bottom: -40px;
+
+  @include vp-1199 {
+    bottom: -23px;
+  }
+
+  @include vp-767 {
+    width: 13px;
+    height: 13px;
+    left: -33px;
+    top: calc(50% - 5px);
+  }
+}
+
+.training__process-item p {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 0;
+
+  @include vp-1199 {
+    width: 64%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+}
+
+.training__process-item svg {
+  margin-bottom: 2px;
+
+  @include vp-1199 {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 0;
+    margin-top: -5px;
+  }
+
+  @include vp-767 {
+    width: 22px;
+    height: 21px;
+    margin-top: -2px;
+  }
+}
+
+.training__process-item--trees {
+  @include vp-1199 {
+    order: 1;
+  }
+
+  @include vp-767 {
+    order: 0;
+  }
+}
+
+.training__process-item--map::after {
+  @include vp-1199 {
+    position: absolute;
+    content: "";
+    width: 106%;
+    height: 1px;
+    left: 9px;
+    bottom: -16px;
+    background-color: rgba(2, 102, 193, 0.2);
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.training__process-item--mountains {
+  @include vp-767 {
+    gap: 13px;
+  }
+}
+
+.training__process-item--mountains::after {
+  @include vp-1199 {
+    position: absolute;
+    content: "";
+    width: 106%;
+    height: 1px;
+    left: 9px;
+    bottom: 64px;
+    background-color: rgba(2, 102, 193, 0.2);
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.training__process-item--mountains.training__process-item::before {
+  @include vp-1199 {
+    bottom: 57px;
+  }
+}
+
+.training__process-item--trees.training__process-item::before {
+  @include vp-1199 {
+    bottom: 57px;
+  }
+}
+
+.training__process-item--mountains svg {
+  @include vp-1199 {
+    margin-top: -3px;
+  }
+}
+
+.training__process-item--trees svg {
+  @include vp-1199 {
+    margin-top: -3px;
+  }
+}
+
+.training__process-item--shoe svg {
+  @include vp-767 {
+    margin-top: -1px;
+  }
+}
+
+.training__process-item .training__process-line {
+  @include vp-1199 {
+    position: absolute;
+    width: 1px;
+    top: -75px;
+    left: 7px;
+    background-color: rgba(2, 102, 193, 0.2);
+    bottom: calc(100% + 22px);
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}

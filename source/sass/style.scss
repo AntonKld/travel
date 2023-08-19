@@ -2,8 +2,8 @@
 // ---------------------------------
 
 @import "vendor/normalize";
-// Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper"; // Swiper 7.4.1
+@import "vendor/leaflet.scss";
 
 // Global
 // ---------------------------------
@@ -23,6 +23,22 @@
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
+@import "blocks/header.scss";
+@import "blocks/page-header.scss";
+@import "blocks/nav.scss";
+@import "blocks/hero.scss";
+@import "blocks/video.scss";
+@import "blocks/swiper-pagination.scss";
+@import "blocks/footer.scss";
+@import "blocks/tours.scss";
+@import "blocks/arrow.scss";
+@import "blocks/training.scss";
+@import "blocks/about.scss";
+@import "blocks/reviews.scss";
+@import "blocks/advantages.scss";
+@import "blocks/gallery.scss";
+@import "blocks/feedback.scss";
+@import "blocks/contacts.scss";
 
 // ---------------------------------
 

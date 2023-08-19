@@ -1,0 +1,45 @@
+.arrow {
+  display: inline-flex;
+  width: 37px;
+  height: 35px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  color: $color-default-white;
+  background-color: $color-navy-blue;
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-resolution-blue;
+    background-color: $color-default-white;
+    border: 1px solid $color-resolution-blue;
+  }
+
+  &:focus {
+    color: $color-resolution-blue;
+    background-color: $color-default-white;
+    border: 1px solid $color-resolution-blue;
+  }
+
+  &:focus-visible {
+    color: $color-resolution-blue;
+    background-color: $color-default-white;
+    border: 1px solid $color-resolution-blue;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-default-white;
+    background-color: $color-resolution-blue;
+    border: 1px solid $color-resolution-blue;
+  }
+
+  @include disabled {
+    background-color: rgba(2, 102, 193, 0.1);
+    pointer-events: none;
+    cursor: none;
+    border: none;
+    color: $color-default-white;
+  }
+}

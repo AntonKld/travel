@@ -1,0 +1,125 @@
+.nav {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 3;
+  left: calc(50% - 598px);
+  width: 48.6%;
+  background-color: transparent;
+  transition: background-color $trans-default;
+  order: 2;
+
+  @include vp-1279 {
+    width: 55%;
+  }
+
+  @include vp-1199 {
+    display: none;
+    width: 100%;
+
+    &--no-js {
+      display: block;
+    }
+
+    &--is-active {
+      display: block;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 32px;
+  flex-wrap: wrap;
+  transition: background-color $trans-default;
+
+  @include vp-1199 {
+    flex-direction: column;
+    gap: 18px;
+    padding: 0 calc(50% - 339px);
+    padding-top: 121px;
+    padding-bottom: 65px;
+    background-color: $color-default-white;
+  }
+
+  @include vp-767 {
+    padding: 94px 15px 45px;
+    gap: 12px;
+  }
+}
+
+.nav__link {
+  position: relative;
+  color: $color-default-white;
+
+  @include hover {
+    &::before {
+      content: "";
+      height: 1px;
+      background-color: $color-default-white;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -3px;
+    }
+  }
+
+  @include focus {
+    outline: 1px solid $color-default-white;
+    outline-offset: 3px;
+  }
+
+  @include active {
+    outline: none;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &:disabled {
+    color: rgba($color-default-white, 0.5);
+    pointer-events: none;
+    cursor: none;
+  }
+
+  @include vp-1199 {
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $color-default-black;
+
+    @include hover {
+      &::before {
+        background-color: $color-default-black;
+      }
+    }
+
+    @include focus {
+      outline: 1px solid $color-default-black;
+      outline-offset: 3px;
+    }
+
+    &:disabled {
+      color: rgba($color-default-black, 0.5);
+      pointer-events: none;
+      cursor: none;
+    }
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+  }
+}
