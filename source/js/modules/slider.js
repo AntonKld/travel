@@ -5,6 +5,17 @@ export const heroSwiper = () => {
     direction: 'horizontal',
     loop: false,
     speed: 300,
+    breakpoints: {
+      0: {
+        allowTouchMove: true,
+      },
+      768: {
+        allowTouchMove: false,
+      },
+      1200: {
+        allowTouchMove: false,
+      },
+    },
     pagination: {
       el: '.hero__pagination',
       clickable: true,
@@ -16,20 +27,23 @@ export const heroSwiper = () => {
 export const initToursSlider = () => {
   const slider = new Swiper('.tours__slider', {
     direction: 'horizontal',
-    slidesPerView: 3,
-    spaceBetween: 30,
+    watchOverflow: true,
     speed: 300,
     breakpoints: {
       0: {
         slidesPerView: 1,
+        spaceBetween: 30,
+        allowTouchMove: true,
       },
       768: {
         slidesPerView: 2,
         spaceBetween: 18,
+        allowTouchMove: false,
       },
       1200: {
         slidesPerView: 3,
         spaceBetween: 30,
+        allowTouchMove: false,
       },
     },
     navigation: {

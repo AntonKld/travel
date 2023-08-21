@@ -6,6 +6,8 @@ const createSlider = () => {
     watchOverflow: true,
     loop: true,
     slidesPerView: 'auto',
+    allowTouchMove: false,
+
     navigation: {
       nextEl: '.advantages__next',
       prevEl: '.advantages__prev',

@@ -1,4 +1,4 @@
-import {map as createMap, tileLayer as createTitleLayers, icon as createIcon, marker as createMarker} from '../vendor/leaflet';
+import {map as createMap, tileLayer as createTitleLayers, icon as createIcon, marker as createMarker} from '../../../node_modules/leaflet/dist/leaflet';
 
 export const initContactsMap = () => {
   if (document.querySelector('#map')) {

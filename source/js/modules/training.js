@@ -9,14 +9,17 @@ export const initTrainingSlider = () => {
     breakpoints: {
       0: {
         slidesPerView: 1,
+        allowTouchMove: true,
       },
       768: {
         slidesPerView: 3,
         spaceBetween: 30,
+        allowTouchMove: false,
       },
       1200: {
         slidesPerView: 4,
         spaceBetween: 30,
+        allowTouchMove: false,
       },
     },
     navigation: {

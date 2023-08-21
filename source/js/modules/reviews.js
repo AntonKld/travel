@@ -6,6 +6,17 @@ export const initReviewsSlider = () => {
     spaceBetween: 30,
     slidesPerView: 'auto',
     watchOverflow: true,
+    breakpoints: {
+      0: {
+        allowTouchMove: true,
+      },
+      768: {
+        allowTouchMove: false,
+      },
+      1200: {
+        allowTouchMove: false,
+      },
+    },
 
     navigation: {
       prevEl: '.reviews__prev',

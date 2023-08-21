@@ -571,6 +571,7 @@
               </button>
             </div>
           </div>
+          <div class="training__block">
           <div class="training__slider swiper">
             <ul class="training__slides swiper-wrapper">
               <li class="training__slide swiper-slide">
@@ -747,6 +748,7 @@
                 </p>
               </li>
             </ul>
+          </div>
           </div>
           <div class="training__title">
             <h3>
@@ -1319,6 +1321,7 @@
               <div class="custom-input" data-validate-type="text" data-limitation="name" data-on-input-validate
                 data-required data-message-base="Заполните поле">
                 <label>
+                  <span class="visually-hidden">Введите ваше имя.</span>
                   <input type="text" id="name" name="name" placeholder="Как к вам обращаться?" minlength="1" required
                     autocomplete="off">
                 </label>
@@ -1326,6 +1329,7 @@
               <div class="custom-input" data-validate-type="phone" data-on-input-validate data-required
                 data-message-base="заполните поле">
                 <label>
+                  <span class="visually-hidden">Введите ваш номер телефона.</span>
                   <input type="tel" id="phone" name="phone" placeholder="Телефон" required autocomplete="off">
                 </label>
               </div>
@@ -1414,7 +1418,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="footer__container">
         <div class="footer__wrapper">
           <a class="footer__logo" href="index.html">
             <svg width="205" height="60">
@@ -1423,23 +1427,23 @@
             <span class="visually-hidden">Логотип сайта.</span>
           </a>
           <ul class="footer__list">
-            <li class="footer__item footer__item--tour">
+            <li class="footer__item">
               <!-- Для disabled у ссылки добавляем class footer__link--disabled-->
               <a class="footer__link" href="#tours">Туры</a>
             </li>
-            <li class="footer__item footer__item--training">
+            <li class="footer__item">
               <a class="footer__link" href="#training">Обучение</a>
             </li>
-            <li class="footer__item footer__item--about">
+            <li class="footer__item">
               <a class="footer__link" href="#about">О нас</a>
             </li>
-            <li class="footer__item footer__item--reviews">
+            <li class="footer__item">
               <a class="footer__link" href="#reviews">Отзывы</a>
             </li>
-            <li class="footer__item footer__item--photo">
+            <li class="footer__item">
               <a class="footer__link" href="#gallery">Фотографии</a>
             </li>
-            <li class="footer__item footer__item--contact">
+            <li class="footer__item">
               <a class="footer__link" href="#contacts">Контакты</a>
             </li>
           </ul>
