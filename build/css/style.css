@@ -4577,21 +4577,16 @@ button,
   height: auto;
 }
 
-.tours::before {
-  content: "";
+.tours__secondary {
+  width: 423px;
   position: absolute;
-  z-index: 0;
-  left: -300px;
-  bottom: 0;
-  width: 837px;
-  height: 279px;
-  background-image: url("../img/tours/tours-cloud-desktop.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  content: "";
+  z-index: -1;
+  top: 61%;
 }
 @media (max-width: 1199px) {
-  .tours::before {
-    content: none;
+  .tours__secondary {
+    display: none;
   }
 }
 

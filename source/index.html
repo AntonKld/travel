@@ -68,23 +68,12 @@
             <div class="hero__slide swiper__slide swiper-slide">
               <div class="hero__photo">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="img/hero/caucasus-desktop@2x.webp 2x, img/hero/caucasus-desktop1x.webp 1x" width="1440"
-                    height="800">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/hero/caucasus-tablet@2x.webp 2x, img/hero/caucasus-tablet1x.webp 1x" width="768"
-                    height="1024">
-                  <source type="image/webp" media="(min-width: 320px)"
-                    srcset="img/hero/caucasus-mobile@2x.webp 2x, img/hero/caucasus-mobile1x.webp 1x" width="320"
-                    height="568">
-                  <source media="(min-width: 1200px)"
-                    srcset="img/hero/caucasus-desktop@2x.jpg 2x, img/hero/caucasus-desktop1x.jpg 1x" width="1440"
-                    height="800">
-                  <source media="(min-width: 768px)"
-                    srcset="img/hero/caucasus-tablet@2x.jpg 2x, img/hero/caucasus-tablet1x.jpg 1x" width="768"
-                    height="1024">
-                  <img src="img/hero/caucasus-mobile1x.jpg" srcset="img/hero/caucasus-mobile@2x.jpg 2x" width="320"
-                    height="568" alt="Холмы Кавказа.">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/hero/caucasus-mobile@1x.webp, ./img/hero/caucasus-mobile@2x.webp 2x" width="320" height="568">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="./img/hero/caucasus-tablet@1x.webp, ./img/hero/caucasus-tablet@2x.webp 2x" width="768" height="1024">
+                  <source type="image/webp" srcset="./img/hero/caucasus-desktop@1x.webp, ./img/hero/caucasus-desktop@2x.webp 2x" width="1440" height="800">
+                  <source media="(max-width: 767px)" srcset="./img/hero/caucasus-mobile@1x.jpg, ./img/hero/caucasus-mobile@2x.jpg 2x" width="320" height="568">
+                  <source media="(max-width: 1199px)" srcset="./img/hero/caucasus-tablet@1x.jpg, ./img/hero/caucasus-tablet@2x.jpg 2x" width="768" height="1024">
+                  <img src="./img/hero/caucasus-desktop@1x.jpg" srcset="./img/hero/caucasus-desktop@2x.jpg 2x" width="1440" height="800" alt="Холмы Кавказа.">
                 </picture>
               </div>
               <div class="hero__inner">
@@ -551,6 +540,14 @@
             <img width="602" height="1364"
               srcset="./img/tours/clouds-desktop@2x.jpg 2x, ./img/tours/clouds-desktop@1x.jpg 1x"
               src="./img/tours/clouds-desktop@1x.jpg" alt="Облака." loading="lazy">
+          </picture>
+        </div>
+        <div class="tours__secondary">
+          <picture>
+            <source type="image/webp" srcset="img/tours/tours-clouds-desktop@2x.webp 2x, img/tours/tours-clouds-desktop.webp 1x"
+              width="840" height="280">
+            <img src="img/tours/tours-clouds-desktop.png" srcset="img/tours/tours-clouds-desktop@2x.png 2x" width="840" height="280"
+              alt="Облака.">
           </picture>
         </div>
       </section>
