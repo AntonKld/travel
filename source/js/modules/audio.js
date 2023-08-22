@@ -8,6 +8,7 @@ export const addAudioHandlers = () => {
         height="220"
         src="https://music.yandex.ru/iframe/#album/25474374"
         title="Аудиоплеер"
+        loading="lazy"
       >
         Слушайте a href='https://music.yandex.ru/album/25474374'>
         Про код </a> на Яндекс Музыке

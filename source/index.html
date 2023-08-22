@@ -84,7 +84,7 @@
                     srcset="img/hero/caucasus-tablet@2x.jpg 2x, img/hero/caucasus-tablet1x.jpg 1x" width="768"
                     height="1024">
                   <img src="img/hero/caucasus-mobile1x.jpg" srcset="img/hero/caucasus-mobile@2x.jpg 2x" width="320"
-                    height="568" alt="Холмы Кавказа.">
+                    height="568" alt="Холмы Кавказа." loading="lazy">
                 </picture>
               </div>
               <div class="hero__inner">
@@ -151,7 +151,7 @@
                     srcset="img/hero/kamchatka-tablet@2x.jpg 2x, img/hero/kamchatka-tablet1x.jpg 1x" width="768"
                     height="1024">
                   <img src="img/hero/kamchatka-mobile1x.jpg" srcset="img/hero/kamchatka-mobile@2x.jpg 2x" width="320"
-                    height="568" alt="Горы камчатки.">
+                    height="568" alt="Горы камчатки." loading="lazy">
                 </picture>
               </div>
               <div class="hero__inner">
@@ -188,7 +188,7 @@
                       srcset="img/hero/hero-slide-desktop@2x.png 2x, img/hero/hero-slide-desktop1x.png 1x" width="410"
                       height="459">
                     <img src="img/hero/hero-slide-tablet1x.png" srcset="img/hero/hero-slide-tablet@2x.webp 2x"
-                      width="442" height="365" alt="Человек в горах.">
+                      width="442" height="365" alt="Человек в горах." loading="lazy">
                   </picture>
                 </div>
               </div>
@@ -268,11 +268,13 @@
           <div class="tours__slider swiper">
             <div class="tours__slider-wrapper swiper-wrapper">
               <div class="tours__slide tours__slide--supportive swiper-slide">
-                <picture aria-hidden="true">
-                  <source height="0" width="0" srcset="./img/tours/elbrus@2x.webp 2x, ./img/tours/elbrus1x.webp 1x"
-                    type="image/webp">
-                  <img height="0" width="0" srcset="./img/tours/elbrus@2x.jpg 2x, ./img/tours/elbrus1x.jpg 1x"
-                    src="./img/tours/elbrus1x.jpg" alt="Горный пейзаж Эльбруса.">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/tours/elbrus-mobile@1x.webp, ./img/tours/elbrus-mobile@2x.webp 2x" width="290" height="412">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="./img/tours/elbrus-tablet@1x.webp, ./img/tours/elbrus-tablet@2x.webp 2x" width="324" height="412">
+                  <source type="image/webp" srcset="./img/tours/elbrus-desktop@1x.webp, ./img/tours/elbrus-desktop@2x.webp 2x" width="380" height="412">
+                  <source media="(max-width: 767px)" srcset="./img/tours/elbrus-mobile@1x.jpg, ./img/tours/elbrus-mobile@2x.jpg 2x" width="290" height="412">
+                  <source media="(max-width: 1199px)" srcset="./img/tours/elbrus-tablet@1x.jpg, ./img/tours/elbrus-tablet@2x.jpg 2x" width="324" height="412">
+                  <img src="./img/tours/elbrus-desktop@1x.jpg" srcset="./img/tours/elbrus-desktop@2x.jpg 2x" width="380" height="412" alt="Горный пейзаж Эльбруса." loading="lazy">
                 </picture>
                 <div class="tours__slide-wrapper">
                   <div class="tours__slide-block">
@@ -331,11 +333,13 @@
                 </div>
               </div>
               <div class="tours__slide tours__slide--supportive swiper-slide">
-                <picture aria-hidden="true">
-                  <source height="0" width="0" srcset="./img/tours/belukha@2x.webp 2x, ./img/tours/belukha1x.webp 1x"
-                    type="image/webp">
-                  <img height="0" width="0" srcset="./img/tours/belukha@2x.jpg 2x, ./img/tours/belukha1x.jpg 1x"
-                    src="./img/tours/belukha1x.jpg" alt="Горный пейзаж Белухи.">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/tours/belukha-mobile@1x.webp, ./img/tours/belukha-mobile@2x.webp 2x" width="290" height="412">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="./img/tours/belukha-tablet@1x.webp, ./img/tours/belukha-tablet@2x.webp 2x" width="324" height="412">
+                  <source type="image/webp" srcset="./img/tours/belukha-desktop@1x.webp, ./img/tours/belukha-desktop@2x.webp 2x" width="380" height="412">
+                  <source media="(max-width: 767px)" srcset="./img/tours/belukha-mobile@1x.jpg, ./img/tours/belukha-mobile@2x.jpg 2x" width="290" height="412">
+                  <source media="(max-width: 1199px)" srcset="./img/tours/belukha-tablet@1x.jpg, ./img/tours/belukha-tablet@2x.jpg 2x" width="324" height="412">
+                  <img src="./img/tours/belukha-desktop@1x.jpg" srcset="./img/tours/belukha-desktop@2x.jpg 2x" width="380" height="412" alt="Горный пейзаж Белухи."loading="lazy">
                 </picture>
                 <div class="tours__slide-wrapper">
                   <div class="tours__slide-block">
@@ -394,11 +398,13 @@
                 </div>
               </div>
               <div class="tours__slide tours__slide--supportive swiper-slide">
-                <picture aria-hidden="true">
-                  <source height="0" width="0" srcset="./img/tours/fisht@2x.webp 2x, ./img/tours/fisht1x.webp 1x"
-                    type="image/webp">
-                  <img height="0" width="0" srcset="./img/tours/fisht@2x.jpg 2x, ./img/tours/fisht1x.jpg 1x"
-                    src="./img/tours/fisht1x.jpg" alt="Горный пейзаж Фишт.">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/tours/fisht-mobile@1x.webp, ./img/tours/fisht-mobile@2x.webp 2x" width="290" height="412">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="./img/tours/fisht-tablet@1x.webp, ./img/tours/fisht-tablet@2x.webp 2x" width="324" height="412">
+                  <source type="image/webp" srcset="./img/tours/fisht-desktop@1x.webp, ./img/tours/fisht-desktop@2x.webp 2x" width="380" height="412">
+                  <source media="(max-width: 767px)" srcset="./img/tours/fisht-mobile@1x.jpg, ./img/tours/fisht-mobile@2x.jpg 2x" width="290" height="412">
+                  <source media="(max-width: 1199px)" srcset="./img/tours/fisht-tablet@1x.jpg, ./img/tours/fisht-tablet@2x.jpg 2x" width="324" height="412">
+                  <img src="./img/tours/fisht-desktop@1x.jpg" srcset="./img/tours/fisht-desktop@2x.jpg 2x" width="380" height="412" alt="Горный пейзаж Фишт." loading="lazy">
                 </picture>
                 <div class="tours__slide-wrapper">
                   <div class="tours__slide-content">
@@ -457,11 +463,13 @@
                 </div>
               </div>
               <div class="tours__slide tours__slide--supportive swiper-slide">
-                <picture aria-hidden="true">
-                  <source height="0" width="0" srcset="./img/tours/belukha@2x.webp 2x, ./img/tours/belukha1x.webp 1x"
-                    type="image/webp">
-                  <img height="0" width="0" srcset="./img/tours/belukha@2x.jpg 2x, ./img/tours/belukha1x.jpg 1x"
-                    src="./img/tours/belukha1x.jpg" alt="Горный пейзаж Белухи.">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/tours/belukha-mobile@1x.webp, ./img/tours/belukha-mobile@2x.webp 2x" width="290" height="412">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="./img/tours/belukha-tablet@1x.webp, ./img/tours/belukha-tablet@2x.webp 2x" width="324" height="412">
+                  <source type="image/webp" srcset="./img/tours/belukha-desktop@1x.webp, ./img/tours/belukha-desktop@2x.webp 2x" width="380" height="412">
+                  <source media="(max-width: 767px)" srcset="./img/tours/belukha-mobile@1x.jpg, ./img/tours/belukha-mobile@2x.jpg 2x" width="290" height="412">
+                  <source media="(max-width: 1199px)" srcset="./img/tours/belukha-tablet@1x.jpg, ./img/tours/belukha-tablet@2x.jpg 2x" width="324" height="412">
+                  <img src="./img/tours/belukha-desktop@1x.jpg" srcset="./img/tours/belukha-desktop@2x.jpg 2x" width="380" height="412" alt="Горный пейзаж Белухи."loading="lazy">
                 </picture>
                 <div class="tours__slide-wrapper">
                   <div class="tours__slide-block">
@@ -808,7 +816,7 @@
                 srcset="img/about/about-tablet@1x.png 1x, img/about/about-tablet@2x.png 2x" width="475" height="402">
               <img src="img/about/about-desktop@1x.png"
                 srcset="img/about/about-desktop@1x.png 1x, img/about/about-desktop@2x.png 2x" width="808" height="474"
-                alt="Группа туристов спускаются к озеру.">
+                alt="Группа туристов спускаются к озеру." loading="lazy">
             </picture>
           </div>
           <div class="about__secondary">
@@ -1198,18 +1206,8 @@
               </li>
               <li class="gallery__item swiper-slide">
                 <picture>
-                  <source type="image/webp" media="(max-width: 767px)"
-                    srcset="img/gallery/gallery-photo-4-mobile@1x.webp 1x, img/gallery/gallery-photo-4-mobile@2x.webp 2x"
-                    width="159" height="260">
-                  <source type="image/webp"
-                    srcset="img/gallery/gallery-photo-4-desktop@1x.webp 1x, img/gallery/gallery-photo-4-desktop@2x.webp 2x"
-                    width="272" height="449">
-                  <source media="(max-width: 767px)"
-                    srcset="img/gallery/gallery-photo-4-mobile@1x.jpg 1x, img/gallery/gallery-photo-4-mobile@2x.jpg 2x"
-                    width="159" height="260">
-                  <img class="gallery__image" src="img/gallery/gallery-photo-4-desktop@1x.jpg"
-                    srcset="img/gallery/gallery-photo-4-desktop@1x.jpg 1x, img/gallery/gallery-photo-4-desktop@2x.jpg 2x"
-                    width="272" height="449" alt="Фото в галерее.">
+                  <source type="image/webp" srcset="./img/gallery/gallery-photo-4-desktop@1x.webp, ./img/gallery/gallery-photo-4-desktop@2x.webp 2x" width="275" height="449">
+                  <img src="./img/gallery/gallery-photo-4-desktop@1x.jpg" srcset="./img/gallery/gallery-photo-4-desktop@2x.jpg 2x" width="275" height="449" alt="Группа людей, идущих по горе." loading="lazy">
                 </picture>
               </li>
               <li class="gallery__item swiper-slide">
