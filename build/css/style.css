@@ -6217,6 +6217,16 @@ button,
   background-color: #1c3374;
 }
 
+.gallery__item:nth-child(2n-1) img {
+  height: 449px;
+}
+@media (max-width: 767px) {
+  .gallery__item:nth-child(2n-1) img {
+    width: 159px;
+    height: 259px;
+  }
+}
+
 @media (max-width: 767px) {
   .gallery__image {
     height: 259px;

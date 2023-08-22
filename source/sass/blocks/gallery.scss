@@ -169,6 +169,15 @@
   background-color: $color-resolution-blue;
 }
 
+.gallery__item:nth-child(2n-1) img {
+  height: 449px;
+
+  @include vp-767 {
+    width: 159px;
+    height: 259px;
+  }
+}
+
 .gallery__image {
   @include vp-767 {
     height: 259px;
