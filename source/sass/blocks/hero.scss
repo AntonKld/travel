@@ -1,9 +1,20 @@
 .hero {
   background-color: $color-elephant;
+  margin-top: -109px;
+
+  @include vp-1199 {
+    margin-top: -107px;
+  }
+
+  @include vp-767 {
+    margin-top: -83px;
+  }
 }
 
 .hero__swiper {
+  display: grid;
   position: relative;
+  overflow: clip visible;
   width: 100%;
   height: 100%;
 }
@@ -35,7 +46,7 @@
   height: 100%;
   padding: 0 calc(50% - 600px);
   padding-bottom: 79px;
-  padding-top: 182px;
+  padding-top: 109px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -48,22 +59,27 @@
 
   @include vp-1199 {
     padding: 0 45px;
-    padding-top: 174px;
+    padding-top: 107px;
     justify-content: inherit;
-    padding-bottom: 41px;
+    padding-bottom: 42px;
   }
 
   @include vp-767 {
-    padding: 140px 15px 152px 15px;
+    padding: 83px 15px 64px 15px;
   }
 }
 
 .hero__slide {
   position: relative;
+  visibility: hidden;
 
   @include vp-1199 {
     height: auto;
   }
+}
+
+.hero__slide.swiper-slide-active {
+  visibility: visible;
 }
 
 .hero__text h2 {
@@ -76,7 +92,8 @@
   font-weight: 800;
   line-height: 100%;
   z-index: 2;
-  margin-bottom: 23px;
+  margin-top: 74px;
+  margin-bottom: 22px;
 
   @include vp-1199 {
     width: 675px;
@@ -86,13 +103,15 @@
     font-weight: 800;
     line-height: 56px;
     margin: 0 auto 14px;
+    margin-top: 66px;
   }
 
   @include vp-767 {
+    width: 100%;
     font-size: 30px;
     line-height: 30px;
-    width: 290px;
     margin-bottom: 14px;
+    margin-top: 58px;
   }
 }
 
@@ -112,7 +131,7 @@
   }
 
   @include vp-767 {
-    width: 283px;
+    width: 100%;
     margin-bottom: 20px;
     font-size: 15px;
     font-weight: 400;
@@ -139,7 +158,7 @@
   }
 
   @include vp-767 {
-    width: 180px;
+    width: 62%;
     padding: 18px 10px;
   }
 
@@ -148,6 +167,8 @@
     color: $color-resolution-blue;
     background-color: $color-default-white;
     border: 1px solid $color-resolution-blue;
+    outline: none;
+    opacity: inherit;
   }
 
   @include active {
@@ -228,5 +249,98 @@
 
   @include vp-767 {
     display: none;
+  }
+}
+
+.hero__pagination-wrapper {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  bottom: 107px;
+
+  .container {
+    position: relative;
+  }
+
+  @include vp-1199 {
+    bottom: 100px;
+  }
+
+  @include vp-767 {
+    bottom: 47px;
+  }
+}
+
+.hero__pagination {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  gap: 15px;
+  width: fit-content;
+  right: 120px;
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid $color-default-white;
+    outline: none;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 1;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &-active {
+      background-color: $color-default-white;
+    }
+
+    @include vp-767 {
+      width: 8px;
+      height: 8px;
+    }
+  }
+
+  @include vp-1199 {
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  @include vp-767 {
+    gap: 12px;
+  }
+}
+
+.hero--no-js .hero__photo {
+  @include vp-1199 {
+    z-index: 2;
+    position: relative;
+    visibility: initial;
+  }
+}
+
+.hero--no-js .hero__inner {
+  @include vp-1199 {
+    position: absolute;
+    visibility: visible;
+    top: 0;
+  }
+}
+
+.hero--no-js .hero__text {
+  @include vp-1199 {
+    color: $color-default-white;
+    z-index: 9;
+    visibility: visible;
+  }
+}
+
+.hero__text {
+  @include vp-767 {
+    margin-bottom: 87px;
   }
 }

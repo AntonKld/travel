@@ -9,7 +9,7 @@ export const initGallerySlider = () => {
         allowTouchMove: true,
       },
       768: {
-        allowTouchMove: false,
+        allowTouchMove: true,
       },
       1200: {
         allowTouchMove: false,

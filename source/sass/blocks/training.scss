@@ -7,11 +7,16 @@
   margin: 0;
   margin-bottom: 33px;
 
+  @include vp-1279 {
+    margin-left: 40px;
+  }
+
   @include vp-1199 {
     font-size: 25px;
     font-weight: 800;
     line-height: 25px;
     margin-bottom: 22px;
+    margin-left: 0;
   }
 
   @include vp-767 {
@@ -89,10 +94,15 @@
   line-height: 21px;
   margin: 0;
 
+  @include vp-1279 {
+    margin-left: 40px;
+  }
+
   @include vp-1199 {
     font-size: 18px;
     font-weight: 700;
     line-height: 18px;
+    margin-left: 0;
   }
 
   @include vp-767 {
@@ -281,10 +291,16 @@
   margin: 0;
   margin-bottom: 41px;
 
+  @include vp-1279 {
+    margin-left: 40px;
+  }
+
   @include vp-1199 {
     font-size: 18px;
     font-weight: 700;
     line-height: 18px;
+    margin-bottom: 40px;
+    margin-left: 0;
   }
 
   @include vp-767 {
@@ -292,7 +308,7 @@
     font-weight: 700;
     line-height: 16px;
     margin-left: 4px;
-    margin-bottom: 28px;
+    margin-bottom: 29px;
   }
 }
 
@@ -314,8 +330,6 @@
   @include vp-767 {
     grid-template-columns: 1fr;
     gap: 25px;
-    padding-left: 37px;
-    padding-right: 26px;
   }
 }
 
@@ -325,7 +339,17 @@
     content: "";
     background-color: rgba(2, 102, 193, 0.2);
     top: 10%;
-    bottom: 10%;
+    bottom: -2%;
+    left: 10px;
+    width: 1px;
+  }
+
+  @include vp-432 {
+    position: absolute;
+    content: "";
+    background-color: rgba(2, 102, 193, 0.2);
+    top: 10%;
+    bottom: 7%;
     left: 10px;
     width: 1px;
   }
@@ -363,8 +387,14 @@
   align-items: center;
   gap: 15px;
 
+  @include vp-1199 {
+    display: block;
+    padding: 0 0 0 40px;
+  }
+
   @include vp-767 {
-    gap: 12px;
+    margin-left: 37px;
+    padding-left: 31px;
   }
 }
 
@@ -379,6 +409,7 @@
 
   @include vp-1199 {
     bottom: -23px;
+    left: 0;
   }
 
   @include vp-767 {
@@ -397,14 +428,14 @@
   margin: 0;
 
   @include vp-1199 {
-    width: 64%;
+    max-width: 70%;
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
   }
 
   @include vp-767 {
-    width: 100%;
+    max-width: 85%;
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
@@ -417,13 +448,14 @@
   @include vp-1199 {
     width: 25px;
     height: 25px;
-    margin-bottom: 0;
-    margin-top: -5px;
+    position: absolute;
+    top: 8px;
+    left: 0;
   }
 
   @include vp-767 {
-    width: 22px;
-    height: 21px;
+    width: 20px;
+    height: 22px;
     margin-top: -2px;
   }
 }
@@ -467,7 +499,7 @@
     width: 106%;
     height: 1px;
     left: 9px;
-    bottom: 64px;
+    top: -20px;
     background-color: rgba(2, 102, 193, 0.2);
   }
 
@@ -478,25 +510,21 @@
 
 .training__process-item--mountains.training__process-item::before {
   @include vp-1199 {
-    bottom: 57px;
+    top: -27px;
+  }
+
+  @include vp-767 {
+    top: 13px;
   }
 }
 
 .training__process-item--trees.training__process-item::before {
   @include vp-1199 {
-    bottom: 57px;
+    top: -27px;
   }
-}
 
-.training__process-item--mountains svg {
-  @include vp-1199 {
-    margin-top: -3px;
-  }
-}
-
-.training__process-item--trees svg {
-  @include vp-1199 {
-    margin-top: -3px;
+  @include vp-767 {
+    top: 13px;
   }
 }
 

@@ -3,14 +3,15 @@ import Swiper from '../vendor/swiper';
 export const heroSwiper = () => {
   const swiper = new Swiper('.hero__swiper', {
     direction: 'horizontal',
-    loop: false,
+    loop: true,
     speed: 300,
+    allowTouchMove: false,
     breakpoints: {
       0: {
         allowTouchMove: true,
       },
       768: {
-        allowTouchMove: false,
+        allowTouchMove: true,
       },
       1200: {
         allowTouchMove: false,
@@ -38,7 +39,7 @@ export const initToursSlider = () => {
       768: {
         slidesPerView: 2,
         spaceBetween: 18,
-        allowTouchMove: false,
+        allowTouchMove: true,
       },
       1200: {
         slidesPerView: 3,

@@ -14,7 +14,7 @@ export const initTrainingSlider = () => {
       768: {
         slidesPerView: 3,
         spaceBetween: 30,
-        allowTouchMove: false,
+        allowTouchMove: true,
       },
       1200: {
         slidesPerView: 4,

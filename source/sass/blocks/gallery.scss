@@ -22,10 +22,15 @@
   margin: 0;
   margin-bottom: 24px;
 
+  @include vp-1279 {
+    margin-left: 40px;
+  }
+
   @include vp-1199 {
     font-size: 25px;
     font-weight: 800;
     line-height: 25px;
+    margin-left: 0;
   }
 
   @include vp-767 {

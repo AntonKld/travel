@@ -34,7 +34,9 @@
             <use xlink:href="./img/sprite.svg#logo"></use>
           </svg>
         </a>
-        <a class="page-header__phone" href="tel:88007253232">8 800 725 32 32</a>
+        <div class="page-header__tel">
+          <a class="page-header__phone" href="tel:88007253232">8 800 725 32 32</a>
+        </div>
         <nav class="page-header__nav nav nav--no-js">
           <ul class="nav__list">
             <li class="nav__item">
@@ -60,7 +62,7 @@
       </div>
     </header>
     <main>
-      <section class="hero" id="hero">
+      <section class="hero hero--no-js" id="hero">
         <h1 class="visually-hidden">Сайт Lifetour - путешествия.</h1>
         <div class="hero__swiper swiper">
           <div class="hero__wrapper swiper__wrapper swiper-wrapper">
@@ -68,12 +70,23 @@
             <div class="hero__slide swiper__slide swiper-slide">
               <div class="hero__photo">
                 <picture>
-                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/hero/caucasus-mobile@1x.webp, ./img/hero/caucasus-mobile@2x.webp 2x" width="320" height="568">
-                  <source type="image/webp" media="(max-width: 1199px)" srcset="./img/hero/caucasus-tablet@1x.webp, ./img/hero/caucasus-tablet@2x.webp 2x" width="768" height="1024">
-                  <source type="image/webp" srcset="./img/hero/caucasus-desktop@1x.webp, ./img/hero/caucasus-desktop@2x.webp 2x" width="1440" height="800">
-                  <source media="(max-width: 767px)" srcset="./img/hero/caucasus-mobile@1x.jpg, ./img/hero/caucasus-mobile@2x.jpg 2x" width="320" height="568">
-                  <source media="(max-width: 1199px)" srcset="./img/hero/caucasus-tablet@1x.jpg, ./img/hero/caucasus-tablet@2x.jpg 2x" width="768" height="1024">
-                  <img src="./img/hero/caucasus-desktop@1x.jpg" srcset="./img/hero/caucasus-desktop@2x.jpg 2x" width="1440" height="800" alt="Холмы Кавказа.">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/hero/caucasus-mobile@1x.webp, ./img/hero/caucasus-mobile@2x.webp 2x" width="320"
+                    height="568">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/hero/caucasus-tablet@1x.webp, ./img/hero/caucasus-tablet@2x.webp 2x" width="768"
+                    height="1024">
+                  <source type="image/webp"
+                    srcset="./img/hero/caucasus-desktop@1x.webp, ./img/hero/caucasus-desktop@2x.webp 2x" width="1440"
+                    height="800">
+                  <source media="(max-width: 767px)"
+                    srcset="./img/hero/caucasus-mobile@1x.jpg, ./img/hero/caucasus-mobile@2x.jpg 2x" width="320"
+                    height="568">
+                  <source media="(max-width: 1199px)"
+                    srcset="./img/hero/caucasus-tablet@1x.jpg, ./img/hero/caucasus-tablet@2x.jpg 2x" width="768"
+                    height="1024">
+                  <img src="./img/hero/caucasus-desktop@1x.jpg" srcset="./img/hero/caucasus-desktop@2x.jpg 2x"
+                    width="1440" height="800" alt="Холмы Кавказа.">
                 </picture>
               </div>
               <div class="hero__inner">
@@ -230,7 +243,11 @@
               </div>
             </div>
           </div>
-          <div class="hero__pagination swiper__pagination swiper-pagination"></div>
+          <div class="hero__pagination-wrapper">
+            <div class="container">
+              <div class="hero__pagination"></div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="tours" id="tours">
@@ -258,12 +275,23 @@
             <div class="tours__slider-wrapper swiper-wrapper">
               <div class="tours__slide tours__slide--supportive swiper-slide">
                 <picture>
-                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/tours/elbrus-mobile@1x.webp, ./img/tours/elbrus-mobile@2x.webp 2x" width="290" height="412">
-                  <source type="image/webp" media="(max-width: 1199px)" srcset="./img/tours/elbrus-tablet@1x.webp, ./img/tours/elbrus-tablet@2x.webp 2x" width="324" height="412">
-                  <source type="image/webp" srcset="./img/tours/elbrus-desktop@1x.webp, ./img/tours/elbrus-desktop@2x.webp 2x" width="380" height="412">
-                  <source media="(max-width: 767px)" srcset="./img/tours/elbrus-mobile@1x.jpg, ./img/tours/elbrus-mobile@2x.jpg 2x" width="290" height="412">
-                  <source media="(max-width: 1199px)" srcset="./img/tours/elbrus-tablet@1x.jpg, ./img/tours/elbrus-tablet@2x.jpg 2x" width="324" height="412">
-                  <img src="./img/tours/elbrus-desktop@1x.jpg" srcset="./img/tours/elbrus-desktop@2x.jpg 2x" width="380" height="412" alt="Горный пейзаж Эльбруса." loading="lazy">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/tours/elbrus-mobile@1x.webp, ./img/tours/elbrus-mobile@2x.webp 2x" width="290"
+                    height="412">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/tours/elbrus-tablet@1x.webp, ./img/tours/elbrus-tablet@2x.webp 2x" width="324"
+                    height="412">
+                  <source type="image/webp"
+                    srcset="./img/tours/elbrus-desktop@1x.webp, ./img/tours/elbrus-desktop@2x.webp 2x" width="380"
+                    height="412">
+                  <source media="(max-width: 767px)"
+                    srcset="./img/tours/elbrus-mobile@1x.jpg, ./img/tours/elbrus-mobile@2x.jpg 2x" width="290"
+                    height="412">
+                  <source media="(max-width: 1199px)"
+                    srcset="./img/tours/elbrus-tablet@1x.jpg, ./img/tours/elbrus-tablet@2x.jpg 2x" width="324"
+                    height="412">
+                  <img src="./img/tours/elbrus-desktop@1x.jpg" srcset="./img/tours/elbrus-desktop@2x.jpg 2x" width="380"
+                    height="412" alt="Горный пейзаж Эльбруса." loading="lazy">
                 </picture>
                 <div class="tours__slide-wrapper">
                   <div class="tours__slide-block">
@@ -323,12 +351,23 @@
               </div>
               <div class="tours__slide tours__slide--supportive swiper-slide">
                 <picture>
-                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/tours/belukha-mobile@1x.webp, ./img/tours/belukha-mobile@2x.webp 2x" width="290" height="412">
-                  <source type="image/webp" media="(max-width: 1199px)" srcset="./img/tours/belukha-tablet@1x.webp, ./img/tours/belukha-tablet@2x.webp 2x" width="324" height="412">
-                  <source type="image/webp" srcset="./img/tours/belukha-desktop@1x.webp, ./img/tours/belukha-desktop@2x.webp 2x" width="380" height="412">
-                  <source media="(max-width: 767px)" srcset="./img/tours/belukha-mobile@1x.jpg, ./img/tours/belukha-mobile@2x.jpg 2x" width="290" height="412">
-                  <source media="(max-width: 1199px)" srcset="./img/tours/belukha-tablet@1x.jpg, ./img/tours/belukha-tablet@2x.jpg 2x" width="324" height="412">
-                  <img src="./img/tours/belukha-desktop@1x.jpg" srcset="./img/tours/belukha-desktop@2x.jpg 2x" width="380" height="412" alt="Горный пейзаж Белухи."loading="lazy">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/tours/belukha-mobile@1x.webp, ./img/tours/belukha-mobile@2x.webp 2x" width="290"
+                    height="412">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/tours/belukha-tablet@1x.webp, ./img/tours/belukha-tablet@2x.webp 2x" width="324"
+                    height="412">
+                  <source type="image/webp"
+                    srcset="./img/tours/belukha-desktop@1x.webp, ./img/tours/belukha-desktop@2x.webp 2x" width="380"
+                    height="412">
+                  <source media="(max-width: 767px)"
+                    srcset="./img/tours/belukha-mobile@1x.jpg, ./img/tours/belukha-mobile@2x.jpg 2x" width="290"
+                    height="412">
+                  <source media="(max-width: 1199px)"
+                    srcset="./img/tours/belukha-tablet@1x.jpg, ./img/tours/belukha-tablet@2x.jpg 2x" width="324"
+                    height="412">
+                  <img src="./img/tours/belukha-desktop@1x.jpg" srcset="./img/tours/belukha-desktop@2x.jpg 2x"
+                    width="380" height="412" alt="Горный пейзаж Белухи." loading="lazy">
                 </picture>
                 <div class="tours__slide-wrapper">
                   <div class="tours__slide-block">
@@ -388,12 +427,23 @@
               </div>
               <div class="tours__slide tours__slide--supportive swiper-slide">
                 <picture>
-                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/tours/fisht-mobile@1x.webp, ./img/tours/fisht-mobile@2x.webp 2x" width="290" height="412">
-                  <source type="image/webp" media="(max-width: 1199px)" srcset="./img/tours/fisht-tablet@1x.webp, ./img/tours/fisht-tablet@2x.webp 2x" width="324" height="412">
-                  <source type="image/webp" srcset="./img/tours/fisht-desktop@1x.webp, ./img/tours/fisht-desktop@2x.webp 2x" width="380" height="412">
-                  <source media="(max-width: 767px)" srcset="./img/tours/fisht-mobile@1x.jpg, ./img/tours/fisht-mobile@2x.jpg 2x" width="290" height="412">
-                  <source media="(max-width: 1199px)" srcset="./img/tours/fisht-tablet@1x.jpg, ./img/tours/fisht-tablet@2x.jpg 2x" width="324" height="412">
-                  <img src="./img/tours/fisht-desktop@1x.jpg" srcset="./img/tours/fisht-desktop@2x.jpg 2x" width="380" height="412" alt="Горный пейзаж Фишт." loading="lazy">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/tours/fisht-mobile@1x.webp, ./img/tours/fisht-mobile@2x.webp 2x" width="290"
+                    height="412">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/tours/fisht-tablet@1x.webp, ./img/tours/fisht-tablet@2x.webp 2x" width="324"
+                    height="412">
+                  <source type="image/webp"
+                    srcset="./img/tours/fisht-desktop@1x.webp, ./img/tours/fisht-desktop@2x.webp 2x" width="380"
+                    height="412">
+                  <source media="(max-width: 767px)"
+                    srcset="./img/tours/fisht-mobile@1x.jpg, ./img/tours/fisht-mobile@2x.jpg 2x" width="290"
+                    height="412">
+                  <source media="(max-width: 1199px)"
+                    srcset="./img/tours/fisht-tablet@1x.jpg, ./img/tours/fisht-tablet@2x.jpg 2x" width="324"
+                    height="412">
+                  <img src="./img/tours/fisht-desktop@1x.jpg" srcset="./img/tours/fisht-desktop@2x.jpg 2x" width="380"
+                    height="412" alt="Горный пейзаж Фишт." loading="lazy">
                 </picture>
                 <div class="tours__slide-wrapper">
                   <div class="tours__slide-content">
@@ -453,12 +503,23 @@
               </div>
               <div class="tours__slide tours__slide--supportive swiper-slide">
                 <picture>
-                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/tours/belukha-mobile@1x.webp, ./img/tours/belukha-mobile@2x.webp 2x" width="290" height="412">
-                  <source type="image/webp" media="(max-width: 1199px)" srcset="./img/tours/belukha-tablet@1x.webp, ./img/tours/belukha-tablet@2x.webp 2x" width="324" height="412">
-                  <source type="image/webp" srcset="./img/tours/belukha-desktop@1x.webp, ./img/tours/belukha-desktop@2x.webp 2x" width="380" height="412">
-                  <source media="(max-width: 767px)" srcset="./img/tours/belukha-mobile@1x.jpg, ./img/tours/belukha-mobile@2x.jpg 2x" width="290" height="412">
-                  <source media="(max-width: 1199px)" srcset="./img/tours/belukha-tablet@1x.jpg, ./img/tours/belukha-tablet@2x.jpg 2x" width="324" height="412">
-                  <img src="./img/tours/belukha-desktop@1x.jpg" srcset="./img/tours/belukha-desktop@2x.jpg 2x" width="380" height="412" alt="Горный пейзаж Белухи."loading="lazy">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/tours/belukha-mobile@1x.webp, ./img/tours/belukha-mobile@2x.webp 2x" width="290"
+                    height="412">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/tours/belukha-tablet@1x.webp, ./img/tours/belukha-tablet@2x.webp 2x" width="324"
+                    height="412">
+                  <source type="image/webp"
+                    srcset="./img/tours/belukha-desktop@1x.webp, ./img/tours/belukha-desktop@2x.webp 2x" width="380"
+                    height="412">
+                  <source media="(max-width: 767px)"
+                    srcset="./img/tours/belukha-mobile@1x.jpg, ./img/tours/belukha-mobile@2x.jpg 2x" width="290"
+                    height="412">
+                  <source media="(max-width: 1199px)"
+                    srcset="./img/tours/belukha-tablet@1x.jpg, ./img/tours/belukha-tablet@2x.jpg 2x" width="324"
+                    height="412">
+                  <img src="./img/tours/belukha-desktop@1x.jpg" srcset="./img/tours/belukha-desktop@2x.jpg 2x"
+                    width="380" height="412" alt="Горный пейзаж Белухи." loading="lazy">
                 </picture>
                 <div class="tours__slide-wrapper">
                   <div class="tours__slide-block">
@@ -544,10 +605,11 @@
         </div>
         <div class="tours__secondary">
           <picture>
-            <source type="image/webp" srcset="img/tours/tours-clouds-desktop@2x.webp 2x, img/tours/tours-clouds-desktop.webp 1x"
-              width="840" height="280">
-            <img src="img/tours/tours-clouds-desktop.png" srcset="img/tours/tours-clouds-desktop@2x.png 2x" width="840" height="280"
-              alt="Облака.">
+            <source type="image/webp"
+              srcset="img/tours/tours-clouds-desktop@2x.webp 2x, img/tours/tours-clouds-desktop.webp 1x" width="840"
+              height="280">
+            <img src="img/tours/tours-clouds-desktop.png" srcset="img/tours/tours-clouds-desktop@2x.png 2x" width="840"
+              height="280" alt="Облака.">
           </picture>
         </div>
       </section>
@@ -577,183 +639,183 @@
             </div>
           </div>
           <div class="training__block">
-          <div class="training__slider swiper">
-            <ul class="training__slides swiper-wrapper">
-              <li class="training__slide swiper-slide">
-                <picture aria-hidden="true">
-                  <source media="(max-width: 767px)" width="250" height="212" type="image/webp"
-                    srcset="./img/training/alex-mobile@2x.webp 2x, ./img/training/alex-mobile@1x.webp 1x">
-                  <source media="(max-width: 767px)" width="238" height="212"
-                    srcset="./img/training/alex-mobile@2x.jpg 2x, ./img/training/alex-mobile@1x.jpg 1x">
+            <div class="training__slider swiper">
+              <ul class="training__slides swiper-wrapper">
+                <li class="training__slide swiper-slide">
+                  <picture aria-hidden="true">
+                    <source media="(max-width: 767px)" width="250" height="212" type="image/webp"
+                      srcset="./img/training/alex-mobile@2x.webp 2x, ./img/training/alex-mobile@1x.webp 1x">
+                    <source media="(max-width: 767px)" width="238" height="212"
+                      srcset="./img/training/alex-mobile@2x.jpg 2x, ./img/training/alex-mobile@1x.jpg 1x">
 
-                  <source media="(max-width: 1199px)" width="176" height="212"
-                    srcset="./img/training/alex-tablet@2x.webp 2x, ./img/training/alex-tablet@1x.webp 1x"
-                    type="image/webp">
-                  <source media="(max-width: 1199px)" width="176" height="212"
-                    srcset="./img/training/alex-tablet@2x.jpg 2x, ./img/training/alex-tablet@1x.jpg 1x">
+                    <source media="(max-width: 1199px)" width="176" height="212"
+                      srcset="./img/training/alex-tablet@2x.webp 2x, ./img/training/alex-tablet@1x.webp 1x"
+                      type="image/webp">
+                    <source media="(max-width: 1199px)" width="176" height="212"
+                      srcset="./img/training/alex-tablet@2x.jpg 2x, ./img/training/alex-tablet@1x.jpg 1x">
 
-                  <source width="238" height="212"
-                    srcset="./img/training/alex-desktop@2x.webp 2x, ./img/training/alex-desktop@1x.webp 1x"
-                    type="image/webp">
-                  <img width="238" height="212"
-                    srcset="./img/training/alex-desktop@2x.jpg 2x, ./img/training/alex-desktop@1x.jpg 1x"
-                    src="./img/training/alex@1x.jpg" alt="Мужчина инструктор." loading="lazy">
-                </picture>
-                <div class="training__slide-iner">
-                  <h4>Александр Прокофьев</h4>
-                  <a class="training__slide-link icon-link" href="#" aria-label="Аккаунт инструктора в Вконтакте.">
-                    <svg width="14" height="8" aria-hidden="true">
-                      <use xlink:href="./img/sprite.svg#vk"></use>
-                    </svg>
-                  </a>
-                </div>
-                <p>
-                  Строгий и&nbsp;внимательный инструктор, веселый
-                  и&nbsp;общительный человек. Любит природу.
-                </p>
-              </li>
-              <li class="training__slide swiper-slide">
-                <picture aria-hidden="true">
-                  <source media="(max-width: 767px)" width="250" height="212"
-                    srcset="./img/training/svetlana-mobile@2x.webp 2x, ./img/training/svetlana-mobile@1x.webp 1x"
-                    type="image/webp">
-                  <source media="(max-width: 767px)" width="238" height="212"
-                    srcset="./img/training/svetlana-mobile@2x.jpg 2x, ./img/training/svetlana-mobile@1x.jpg 1x">
+                    <source width="238" height="212"
+                      srcset="./img/training/alex-desktop@2x.webp 2x, ./img/training/alex-desktop@1x.webp 1x"
+                      type="image/webp">
+                    <img width="238" height="212"
+                      srcset="./img/training/alex-desktop@2x.jpg 2x, ./img/training/alex-desktop@1x.jpg 1x"
+                      src="./img/training/alex@1x.jpg" alt="Мужчина инструктор." loading="lazy">
+                  </picture>
+                  <div class="training__slide-iner">
+                    <h4>Александр Прокофьев</h4>
+                    <a class="training__slide-link icon-link" href="#" aria-label="Аккаунт инструктора в Вконтакте.">
+                      <svg width="14" height="8" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <p>
+                    Строгий и&nbsp;внимательный инструктор, веселый
+                    и&nbsp;общительный человек. Любит природу.
+                  </p>
+                </li>
+                <li class="training__slide swiper-slide">
+                  <picture aria-hidden="true">
+                    <source media="(max-width: 767px)" width="250" height="212"
+                      srcset="./img/training/svetlana-mobile@2x.webp 2x, ./img/training/svetlana-mobile@1x.webp 1x"
+                      type="image/webp">
+                    <source media="(max-width: 767px)" width="238" height="212"
+                      srcset="./img/training/svetlana-mobile@2x.jpg 2x, ./img/training/svetlana-mobile@1x.jpg 1x">
 
-                  <source media="(max-width: 1199px)" width="176" height="212"
-                    srcset="./img/training/svetlana-tablet@2x.webp 2x, ./img/training/svetlana-tablet@1x.webp 1x"
-                    type="image/webp">
-                  <source media="(max-width: 1199px)" width="176" height="212"
-                    srcset="./img/training/svetlana-tablet@2x.jpg 2x, ./img/training/svetlana-tablet@1x.jpg 1x">
+                    <source media="(max-width: 1199px)" width="176" height="212"
+                      srcset="./img/training/svetlana-tablet@2x.webp 2x, ./img/training/svetlana-tablet@1x.webp 1x"
+                      type="image/webp">
+                    <source media="(max-width: 1199px)" width="176" height="212"
+                      srcset="./img/training/svetlana-tablet@2x.jpg 2x, ./img/training/svetlana-tablet@1x.jpg 1x">
 
-                  <source width="238" height="212"
-                    srcset="./img/training/svetlana-desktop@2x.webp 2x, ./img/training/svetlana-desktop@1x.webp 1x"
-                    type="image/webp">
-                  <img width="238" height="212"
-                    srcset="./img/training/svetlana-desktop@2x.jpg 2x, ./img/training/svetlana-desktop@1x.jpg 1x"
-                    src="./img/training/svetlana-desktop@1x.jpg" alt="Женщина." loading="lazy">
-                </picture>
-                <div class="training__slide-iner">
-                  <h4>Светлана Афиногенова</h4>
-                  <a class="training__slide-link icon-link" href="#" aria-label="Аккаунт инструктора в Вконтакте.">
-                    <svg width="14" height="8" aria-hidden="true">
-                      <use xlink:href="./img/sprite.svg#vk"></use>
-                    </svg>
-                  </a>
-                </div>
-                <p>
-                  Видеть мир вокруг, познавать его опасности, находить друг
-                  друга, становиться ближе, чувствовать&nbsp;-
-                  в&nbsp;этом назначение жизни.
-                </p>
-              </li>
-              <li class="training__slide swiper-slide">
-                <picture aria-hidden="true">
-                  <source media="(max-width: 767px)" width="250" height="212"
-                    srcset="./img/training/nadezhda-mobile@2x.webp 2x, ./img/training/nadezhda-mobile@1x.webp 1x"
-                    type="image/webp">
-                  <source media="(max-width: 767px)" width="238" height="212"
-                    srcset="./img/training/nadezhda-mobile@2x.jpg 2x, ./img/training/nadezhda-mobile@1x.jpg 1x">
+                    <source width="238" height="212"
+                      srcset="./img/training/svetlana-desktop@2x.webp 2x, ./img/training/svetlana-desktop@1x.webp 1x"
+                      type="image/webp">
+                    <img width="238" height="212"
+                      srcset="./img/training/svetlana-desktop@2x.jpg 2x, ./img/training/svetlana-desktop@1x.jpg 1x"
+                      src="./img/training/svetlana-desktop@1x.jpg" alt="Женщина." loading="lazy">
+                  </picture>
+                  <div class="training__slide-iner">
+                    <h4>Светлана Афиногенова</h4>
+                    <a class="training__slide-link icon-link" href="#" aria-label="Аккаунт инструктора в Вконтакте.">
+                      <svg width="14" height="8" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <p>
+                    Видеть мир вокруг, познавать его опасности, находить друг
+                    друга, становиться ближе, чувствовать&nbsp;-
+                    в&nbsp;этом назначение жизни.
+                  </p>
+                </li>
+                <li class="training__slide swiper-slide">
+                  <picture aria-hidden="true">
+                    <source media="(max-width: 767px)" width="250" height="212"
+                      srcset="./img/training/nadezhda-mobile@2x.webp 2x, ./img/training/nadezhda-mobile@1x.webp 1x"
+                      type="image/webp">
+                    <source media="(max-width: 767px)" width="238" height="212"
+                      srcset="./img/training/nadezhda-mobile@2x.jpg 2x, ./img/training/nadezhda-mobile@1x.jpg 1x">
 
-                  <source media="(max-width: 1199px)" width="176" height="212"
-                    srcset="./img/training/nadezhda-tablet@2x.webp 2x, ./img/training/nadezhda-tablet@1x.webp 1x"
-                    type="image/webp">
-                  <source media="(max-width: 1199px)" width="176" height="212"
-                    srcset="./img/training/nadezhda-tablet@2x.jpg 2x, ./img/training/nadezhda-tablet@1x.jpg 1x">
+                    <source media="(max-width: 1199px)" width="176" height="212"
+                      srcset="./img/training/nadezhda-tablet@2x.webp 2x, ./img/training/nadezhda-tablet@1x.webp 1x"
+                      type="image/webp">
+                    <source media="(max-width: 1199px)" width="176" height="212"
+                      srcset="./img/training/nadezhda-tablet@2x.jpg 2x, ./img/training/nadezhda-tablet@1x.jpg 1x">
 
-                  <source width="238" height="212"
-                    srcset="./img/training/nadezhda-desktop@2x.webp 2x, ./img/training/nadezhda-desktop@1x.webp 1x"
-                    type="image/webp">
-                  <img width="238" height="212"
-                    srcset="./img/training/nadezhda-desktop@2x.jpg 2x, ./img/training/nadezhda-desktop@1x.jpg 1x"
-                    src="./img/training/nadezhda@1x.jpg" alt="Женщина." loading="lazy">
-                </picture>
-                <div class="training__slide-iner">
-                  <h4>Надежда Колесниченко</h4>
-                  <a class="training__slide-link icon-link" href="#" aria-label="Аккаунт инструктора в Вконтакте.">
-                    <svg width="14" height="8" aria-hidden="true">
-                      <use xlink:href="./img/sprite.svg#vk"></use>
-                    </svg>
-                  </a>
-                </div>
-                <p>
-                  Участники говорят, что Надежда ответственная, приятная
-                  в&nbsp;общении, и&nbsp;в&nbsp;поездках с&nbsp;ней
-                  чувствуешь себя спокойно и&nbsp;уверенно.
-                </p>
-              </li>
-              <li class="training__slide swiper-slide">
-                <picture aria-hidden="true">
-                  <source media="(max-width: 767px)" width="250" height="212"
-                    srcset="./img/training/fedor-mobile@2x.webp 2x, ./img/training/fedor-mobile@1x.webp 1x"
-                    type="image/webp">
-                  <source media="(max-width: 767px)" width="238" height="212"
-                    srcset="./img/training/fedor-mobile@2x.jpg 2x, ./img/training/fedor-mobile@1x.jpg 1x">
+                    <source width="238" height="212"
+                      srcset="./img/training/nadezhda-desktop@2x.webp 2x, ./img/training/nadezhda-desktop@1x.webp 1x"
+                      type="image/webp">
+                    <img width="238" height="212"
+                      srcset="./img/training/nadezhda-desktop@2x.jpg 2x, ./img/training/nadezhda-desktop@1x.jpg 1x"
+                      src="./img/training/nadezhda@1x.jpg" alt="Женщина." loading="lazy">
+                  </picture>
+                  <div class="training__slide-iner">
+                    <h4>Надежда Колесниченко</h4>
+                    <a class="training__slide-link icon-link" href="#" aria-label="Аккаунт инструктора в Вконтакте.">
+                      <svg width="14" height="8" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <p>
+                    Участники говорят, что Надежда ответственная, приятная
+                    в&nbsp;общении, и&nbsp;в&nbsp;поездках с&nbsp;ней
+                    чувствуешь себя спокойно и&nbsp;уверенно.
+                  </p>
+                </li>
+                <li class="training__slide swiper-slide">
+                  <picture aria-hidden="true">
+                    <source media="(max-width: 767px)" width="250" height="212"
+                      srcset="./img/training/fedor-mobile@2x.webp 2x, ./img/training/fedor-mobile@1x.webp 1x"
+                      type="image/webp">
+                    <source media="(max-width: 767px)" width="238" height="212"
+                      srcset="./img/training/fedor-mobile@2x.jpg 2x, ./img/training/fedor-mobile@1x.jpg 1x">
 
-                  <source media="(max-width: 1199px)" width="176" height="212"
-                    srcset="./img/training/fedor-tablet@2x.webp 2x, ./img/training/fedor-tablet@1x.webp 1x"
-                    type="image/webp">
-                  <source media="(max-width: 1199px)" width="176" height="212"
-                    srcset="./img/trainingfedor-tablet@2x.jpg 2x, ./img/trainingfedor-tablet@1x.jpg 1x">
+                    <source media="(max-width: 1199px)" width="176" height="212"
+                      srcset="./img/training/fedor-tablet@2x.webp 2x, ./img/training/fedor-tablet@1x.webp 1x"
+                      type="image/webp">
+                    <source media="(max-width: 1199px)" width="176" height="212"
+                      srcset="./img/trainingfedor-tablet@2x.jpg 2x, ./img/trainingfedor-tablet@1x.jpg 1x">
 
-                  <source width="238" height="212"
-                    srcset="./img/training/fedor-desktop@2x.webp 2x, ./img/training/fedor-desktop@1x.webp 1x"
-                    type="image/webp">
-                  <img width="238" height="212"
-                    srcset="./img/training/fedor-desktop@2x.jpg 2x, ./img/training/fedor@1x.jpg 1x"
-                    src="./img/training/fedor-desktop@1x.jpg" alt="Мужчина инструктор." loading="lazy">
-                </picture>
-                <div class="training__slide-iner">
-                  <h4>Федор Кайгородов</h4>
-                  <a class="training__slide-link icon-link" href="#" aria-label="Аккаунт инструктора в Вконтакте.">
-                    <svg width="14" height="8" aria-hidden="true">
-                      <use xlink:href="./img/sprite.svg#vk"></use>
-                    </svg>
-                  </a>
-                </div>
-                <p>
-                  Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года.
-                  В&nbsp;России побывал в&nbsp;горных районах Хибины, Архыз,
-                  много путешествует по&nbsp;Европе.
-                </p>
-              </li>
-              <li class="training__slide swiper-slide">
-                <picture aria-hidden="true">
-                  <source media="(max-width: 767px)" width="250" height="212"
-                    srcset="./img/training/svetlana-mobile@2x.webp 2x, ./img/training/svetlana-mobile@1x.webp 1x"
-                    type="image/webp">
-                  <source media="(max-width: 767px)" width="238" height="212"
-                    srcset="./img/training/svetlana-mobile@2x.jpg 2x, ./img/training/svetlana-mobile@1x.jpg 1x">
+                    <source width="238" height="212"
+                      srcset="./img/training/fedor-desktop@2x.webp 2x, ./img/training/fedor-desktop@1x.webp 1x"
+                      type="image/webp">
+                    <img width="238" height="212"
+                      srcset="./img/training/fedor-desktop@2x.jpg 2x, ./img/training/fedor@1x.jpg 1x"
+                      src="./img/training/fedor-desktop@1x.jpg" alt="Мужчина инструктор." loading="lazy">
+                  </picture>
+                  <div class="training__slide-iner">
+                    <h4>Федор Кайгородов</h4>
+                    <a class="training__slide-link icon-link" href="#" aria-label="Аккаунт инструктора в Вконтакте.">
+                      <svg width="14" height="8" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <p>
+                    Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года.
+                    В&nbsp;России побывал в&nbsp;горных районах Хибины, Архыз,
+                    много путешествует по&nbsp;Европе.
+                  </p>
+                </li>
+                <li class="training__slide swiper-slide">
+                  <picture aria-hidden="true">
+                    <source media="(max-width: 767px)" width="250" height="212"
+                      srcset="./img/training/svetlana-mobile@2x.webp 2x, ./img/training/svetlana-mobile@1x.webp 1x"
+                      type="image/webp">
+                    <source media="(max-width: 767px)" width="238" height="212"
+                      srcset="./img/training/svetlana-mobile@2x.jpg 2x, ./img/training/svetlana-mobile@1x.jpg 1x">
 
-                  <source media="(max-width: 1199px)" width="176" height="212"
-                    srcset="./img/training/svetlana-tablet@2x.webp 2x, ./img/training/svetlana-tablet@1x.webp 1x"
-                    type="image/webp">
-                  <source media="(max-width: 1199px)" width="176" height="212"
-                    srcset="./img/training/svetlana-tablet@2x.jpg 2x, ./img/training/svetlana-tablet@1x.jpg 1x">
+                    <source media="(max-width: 1199px)" width="176" height="212"
+                      srcset="./img/training/svetlana-tablet@2x.webp 2x, ./img/training/svetlana-tablet@1x.webp 1x"
+                      type="image/webp">
+                    <source media="(max-width: 1199px)" width="176" height="212"
+                      srcset="./img/training/svetlana-tablet@2x.jpg 2x, ./img/training/svetlana-tablet@1x.jpg 1x">
 
-                  <source width="238" height="212"
-                    srcset="./img/training/svetlana-desktop@2x.webp 2x, ./img/training/svetlana-desktop@1x.webp 1x"
-                    type="image/webp">
-                  <img width="238" height="212"
-                    srcset="./img/training/svetlana-desktop@2x.jpg 2x, ./img/training/svetlana-desktop@1x.jpg 1x"
-                    src="./img/training/svetlana-desktop@1x.jpg" alt="Женщина." loading="lazy">
-                </picture>
-                <div class="training__slide-iner">
-                  <h4>Светлана Афиногенова</h4>
-                  <a class="training__slide-link icon-link" href="#" aria-label="Аккаунт инструктора в Вконтакте.">
-                    <svg width="14" height="8" aria-hidden="true">
-                      <use xlink:href="./img/sprite.svg#vk"></use>
-                    </svg>
-                  </a>
-                </div>
-                <p>
-                  Видеть мир вокруг, познавать его опасности, находить друг
-                  друга, становиться ближе, чувствовать&nbsp;-
-                  в&nbsp;этом назначение жизни.
-                </p>
-              </li>
-            </ul>
-          </div>
+                    <source width="238" height="212"
+                      srcset="./img/training/svetlana-desktop@2x.webp 2x, ./img/training/svetlana-desktop@1x.webp 1x"
+                      type="image/webp">
+                    <img width="238" height="212"
+                      srcset="./img/training/svetlana-desktop@2x.jpg 2x, ./img/training/svetlana-desktop@1x.jpg 1x"
+                      src="./img/training/svetlana-desktop@1x.jpg" alt="Женщина." loading="lazy">
+                  </picture>
+                  <div class="training__slide-iner">
+                    <h4>Светлана Афиногенова</h4>
+                    <a class="training__slide-link icon-link" href="#" aria-label="Аккаунт инструктора в Вконтакте.">
+                      <svg width="14" height="8" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <p>
+                    Видеть мир вокруг, познавать его опасности, находить друг
+                    друга, становиться ближе, чувствовать&nbsp;-
+                    в&nbsp;этом назначение жизни.
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="training__title">
             <h3>
@@ -829,10 +891,9 @@
               <h2 data-text="О нас">О нас</h2>
             </div>
             <h3>История компании</h3>
-            <p>
-              В далеком 2000 году мы начали заниматься туризмом – походы, поездки, восхождения, нам это настолько
-              понравилось, что мы этим стали жить. Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать
-              людям удивительные места нашей страны.
+            <p>В&nbsp;далеком 2000 году мы&nbsp;начали заниматься туризмом&nbsp;- походы, поездки, восхождения, нам это
+              настолько понравилось, что мы этим стали жить. Спустя&nbsp;5&nbsp;лет, в&nbsp;2005&nbsp;году
+              мы&nbsp;основали компанию, чтобы показывать людям удивительные места нашей страны.
             </p>
             <div class="about__text">
               <h3>Наша цель</h3>
@@ -1137,7 +1198,8 @@
         <div class="gallery__container">
           <h2 data-text="Фотогалерея">Фотогалерея</h2>
           <div class="gallery__block">
-            <p>Добавляйте фото в&nbsp;Instagram с&nbsp;хэштегом #лайфтур, а&nbsp;также отмечайте нас на&nbsp;фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
+            <p>Добавляйте фото в&nbsp;Instagram с&nbsp;хэштегом #лайфтур, а&nbsp;также отмечайте нас на&nbsp;фото.
+              Лучшие фотографии украсят этот раздел нашего сайта.</p>
             <div class="gallery__inner">
               <button class="gallery__prev arrow" type="button" aria-label="Предыдущий слайд.">
                 <svg width="37" height="35" aria-hidden="true">
@@ -1203,8 +1265,12 @@
               </li>
               <li class="gallery__item swiper-slide">
                 <picture>
-                  <source type="image/webp" srcset="./img/gallery/gallery-photo-4-desktop@1x.webp, ./img/gallery/gallery-photo-4-desktop@2x.webp 2x" width="275" height="449">
-                  <img class="gallery__image" src="./img/gallery/gallery-photo-4-desktop@1x.jpg" srcset="./img/gallery/gallery-photo-4-desktop@2x.jpg 2x" width="275" height="449" alt="Группа людей, идущих по горе." loading="lazy">
+                  <source type="image/webp"
+                    srcset="./img/gallery/gallery-photo-4-desktop@1x.webp, ./img/gallery/gallery-photo-4-desktop@2x.webp 2x"
+                    width="275" height="449">
+                  <img class="gallery__image" src="./img/gallery/gallery-photo-4-desktop@1x.jpg"
+                    srcset="./img/gallery/gallery-photo-4-desktop@2x.jpg 2x" width="275" height="449"
+                    alt="Группа людей, идущих по горе." loading="lazy">
                 </picture>
               </li>
               <li class="gallery__item swiper-slide">
@@ -1314,15 +1380,14 @@
           <div class="feedback__form" data-form-validate="data-form-validate" data-callback="base">
             <form action="https://echo.htmlacademy.ru" method="get">
               <div class="custom-input" data-validate-type="text" data-limitation="name" data-on-input-validate
-                data-required data-message-base="Заполните поле">
+                data-required>
                 <label>
                   <span class="visually-hidden">Введите ваше имя.</span>
                   <input type="text" id="name" name="name" placeholder="Как к вам обращаться?" minlength="1" required
                     autocomplete="off">
                 </label>
               </div>
-              <div class="custom-input" data-validate-type="phone" data-on-input-validate data-required
-                data-message-base="заполните поле">
+              <div class="custom-input" data-validate-type="phone" data-on-input-validate data-required>
                 <label>
                   <span class="visually-hidden">Введите ваш номер телефона.</span>
                   <input type="tel" id="phone" name="phone" placeholder="Телефон" required autocomplete="off">
@@ -1443,7 +1508,9 @@
             </li>
           </ul>
           <!-- Для disabled у ссылки добавляем class footer_contacts--disabled-->
-          <a class="footer__contacts" href="tel:78007253232">8 800 725 32 32</a>
+          <div class="footer__tel">
+            <a class="footer__contacts" href="tel:78007253232">8 800 725 32 32</a>
+          </div>
         </div>
         <ul class="footer__social">
           <li class="footer__social-item">

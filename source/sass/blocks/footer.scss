@@ -46,7 +46,7 @@
     flex-direction: column;
     text-align: start;
     gap: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
 }
 
@@ -87,7 +87,7 @@
 
   @include vp-1199 {
     gap: 11px;
-    left: 0;
+    left: 39px;
     margin-top: -10px;
   }
 
@@ -96,6 +96,7 @@
     column-count: 2;
     gap: 5px 20px;
     margin: 0;
+    left: 0;
   }
 }
 
@@ -136,12 +137,17 @@
   cursor: none;
 }
 
+.footer__tel {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer__contacts {
   color: $color-elephant;
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
-  margin-top: -5px;
+  margin-bottom: 5px;
 
   @include vp-1199 {
     display: none;
@@ -149,10 +155,18 @@
 
   &:hover {
     color: $color-resolution-blue;
+    outline: none;
   }
 
   &:focus {
     color: $color-resolution-blue;
+    outline: none;
+  }
+
+  &:focus-visible {
+    color: $color-resolution-blue;
+    outline: none;
+    border: none;
   }
 
   &:active {

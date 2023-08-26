@@ -1,17 +1,11 @@
 .nav {
   padding: 0;
   margin: 0;
-  position: relative;
   z-index: 3;
   left: calc(50% - 598px);
-  width: 48.6%;
   background-color: transparent;
   transition: background-color $trans-default;
   order: 2;
-
-  @include vp-1279 {
-    width: 55%;
-  }
 
   @include vp-1199 {
     display: none;
@@ -24,12 +18,16 @@
     &--is-active {
       display: block;
       position: fixed;
-      top: 0;
+      top: 75px;
       bottom: 0;
       left: 0;
       right: 0;
-      overflow: hidden;
+      overflow-y: auto;
       background-color: rgba(0, 0, 0, 0.5);
+
+      @include vp-767 {
+        top: 69px;
+      }
     }
   }
 }
@@ -43,19 +41,21 @@
   justify-content: flex-start;
   gap: 32px;
   flex-wrap: wrap;
+  margin-top: 23px;
   transition: background-color $trans-default;
 
   @include vp-1199 {
     flex-direction: column;
     gap: 18px;
     padding: 0 calc(50% - 339px);
-    padding-top: 121px;
     padding-bottom: 65px;
+    padding-top: 46px;
     background-color: $color-default-white;
+    margin: 0;
   }
 
   @include vp-767 {
-    padding: 94px 15px 45px;
+    padding: 25px 15px 45px;
     gap: 12px;
   }
 }
