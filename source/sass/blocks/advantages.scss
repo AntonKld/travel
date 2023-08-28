@@ -30,7 +30,7 @@
   position: absolute;
   content: "";
   z-index: -1;
-  top: -48%;
+  top: -38%;
 
   @include vp-1199 {
     display: none;
@@ -219,7 +219,7 @@
 
 .advantages__image {
   position: absolute;
-  top: -11%;
+  top: -9.4%;
   right: 0;
   z-index: -1;
 

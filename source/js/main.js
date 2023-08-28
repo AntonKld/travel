@@ -9,7 +9,7 @@ import {initReviewsSlider} from './modules/reviews';
 import {initAdvantagesSlider} from './modules/advantages';
 import {initGallerySlider} from './modules/gallery';
 import {initContactsMap} from './modules/map';
-import {getHeight, initHero, getHeaderAfterInnerChanging, getHeaderAfterWindowResizeChanging} from './modules/hero-style';
+import {initHero, initHeroMargin} from './modules/hero-style';
 
 // ---------------------------------
 
@@ -29,16 +29,11 @@ window.addEventListener('DOMContentLoaded', () => {
     initToursSlider();
     initTrainingSlider();
     initReviewsSlider();
-    getHeaderAfterInnerChanging((header) => {
-      getHeight(header.offsetHeight);
-    });
-    getHeaderAfterWindowResizeChanging((header) => {
-      getHeight(header.offsetHeight);
-    });
+    initHeroMargin();
+    initHero();
     const form = new Form();
     window.form = form;
     form.init();
-    initHero();
     heroSwiper();
     burgerMenuInit();
     initPlayVideo();

@@ -1,35 +1,34 @@
-const hero = document.querySelector('.hero');
 const header = document.querySelector('.page-header');
-const content = document.querySelector('.hero__inner');
+const hero = document.querySelector('.hero');
+const heroSlide = hero.querySelectorAll('.hero__slide');
 
-export const getHeight = (newTop) => {
-  if (!hero) {
-    return;
+
+const setMargin = () => {
+  if (!header.classList.contains('page-header--is-active')) {
+    hero.style.marginTop = `-${header.offsetHeight}px`;
+    heroSlide.forEach((slide) => {
+      slide.style.paddingTop = `${header.offsetHeight}px`;
+    });
   }
-
-  hero.style.marginTop = `${-newTop}px`;
-  content.style.paddingTop = `${newTop}px`;
 };
 
-export const getHeaderAfterInnerChanging = (callback) => {
-  const observer = new MutationObserver((mutationRecords) => {
-    callback(header, mutationRecords);
-  });
+const observeMutations = () => {
+  const target = new MutationObserver(setMargin);
 
-  const observerOption = {
+  target.observe(header, {
     childList: true,
     subtree: true,
-  };
-
-  if (header) {
-    observer.observe(header, observerOption);
-  }
+  });
 };
 
-export const getHeaderAfterWindowResizeChanging = (callback) => {
-  window.addEventListener('resize', () => {
-    callback(header);
-  });
+export const initHeroMargin = () => {
+  if (!header.classList.contains('page-header--is-active')) {
+    observeMutations();
+    setMargin();
+    window.addEventListener('resize', () => {
+      setMargin();
+    });
+  }
 };
 
 export const initHero = () => {

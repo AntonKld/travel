@@ -217,8 +217,16 @@
 }
 
 .reviews__name {
-  margin: auto 0 0;
+  margin: 0;
   font-weight: 300;
   font-size: 12px;
   line-height: 12px;
+}
+
+.reviews__name--title {
+  margin-top: 22px;
+
+  @include vp-1199 {
+    margin-top: 0;
+  }
 }
